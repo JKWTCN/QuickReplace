@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(D:/Qt/5.15.2/msvc2019_64/bin/lrelease.exe:*)",
+      "Bash(where:*)",
+      "Bash(C:/Qt/5.15.2/msvc2019_64/bin/lrelease.exe:*)"
+    ]
+  }
+}

@@ -17,7 +17,19 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void browseSourceFolder();
+    void browseTargetFolder();
+    void replaceFolders();
+    void showAbout();
+
 private:
+    void connectSignals();
+    bool replaceFolderContents(const QString &sourcePath, const QString &targetPath, bool createBackup, bool confirmDelete);
+    bool deleteDirectory(const QString &dirPath);
+    bool copyDirectory(const QString &sourcePath, const QString &targetPath);
+    bool confirmAction(const QString &message);
+
     Ui::MainWindow *ui;
 };
 #endif // MAINWINDOW_H
