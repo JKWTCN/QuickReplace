@@ -96,32 +96,32 @@
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="35"/>
+        <location filename="mainwindow.cpp" line="65"/>
         <source>选择源文件夹</source>
         <translation>选择源文件夹</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="47"/>
+        <location filename="mainwindow.cpp" line="77"/>
         <source>选择目标文件夹</source>
         <translation>选择目标文件夹</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="62"/>
+        <location filename="mainwindow.cpp" line="92"/>
         <source>请选择源文件夹和目标文件夹！</source>
         <translation>请选择源文件夹和目标文件夹！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="70"/>
+        <location filename="mainwindow.cpp" line="100"/>
         <source>源文件夹不存在或不是有效的文件夹！</source>
         <translation>源文件夹不存在或不是有效的文件夹！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="75"/>
+        <location filename="mainwindow.cpp" line="105"/>
         <source>目标文件夹不存在或不是有效的文件夹！</source>
         <translation>目标文件夹不存在或不是有效的文件夹！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="80"/>
+        <location filename="mainwindow.cpp" line="110"/>
         <source>源文件夹和目标文件夹不能相同！</source>
         <translation>源文件夹和目标文件夹不能相同！</translation>
     </message>
@@ -134,7 +134,7 @@
         <translation type="vanished">源文件夹: %1\n</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="89"/>
+        <location filename="mainwindow.cpp" line="119"/>
         <source>目标文件夹: %2</source>
         <translation>目标文件夹: %2</translation>
     </message>
@@ -143,77 +143,77 @@
         <translation type="vanished">目标文件夹将被备份为 .bak 后缀。</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="100"/>
+        <location filename="mainwindow.cpp" line="130"/>
         <source>成功</source>
         <translation>成功</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="100"/>
+        <location filename="mainwindow.cpp" line="130"/>
         <source>文件夹替换完成！</source>
         <translation>文件夹替换完成！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="62"/>
-        <location filename="mainwindow.cpp" line="70"/>
-        <location filename="mainwindow.cpp" line="75"/>
-        <location filename="mainwindow.cpp" line="80"/>
-        <location filename="mainwindow.cpp" line="102"/>
+        <location filename="mainwindow.cpp" line="92"/>
+        <location filename="mainwindow.cpp" line="100"/>
+        <location filename="mainwindow.cpp" line="105"/>
+        <location filename="mainwindow.cpp" line="110"/>
+        <location filename="mainwindow.cpp" line="132"/>
         <source>错误</source>
         <translation>错误</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="87"/>
+        <location filename="mainwindow.cpp" line="117"/>
         <source>确定要用文件夹 A 的内容替换文件夹 B 的内容吗？
 
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="88"/>
+        <location filename="mainwindow.cpp" line="118"/>
         <source>源文件夹: %1
 </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="92"/>
+        <location filename="mainwindow.cpp" line="122"/>
         <source>
 
 目标文件夹将被备份为 .bak 后缀。</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="102"/>
+        <location filename="mainwindow.cpp" line="132"/>
         <source>文件夹替换失败，请检查权限或磁盘空间！</source>
         <translation>文件夹替换失败，请检查权限或磁盘空间！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="115"/>
+        <location filename="mainwindow.cpp" line="145"/>
         <source>无法删除旧的备份文件夹！</source>
         <translation>无法删除旧的备份文件夹！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="115"/>
-        <location filename="mainwindow.cpp" line="121"/>
+        <location filename="mainwindow.cpp" line="145"/>
+        <location filename="mainwindow.cpp" line="151"/>
         <source>警告</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="121"/>
+        <location filename="mainwindow.cpp" line="151"/>
         <source>创建备份失败！</source>
         <translation>创建备份失败！</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="211"/>
+        <location filename="mainwindow.cpp" line="241"/>
         <source>确认操作</source>
         <translation>确认操作</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="221"/>
+        <location filename="mainwindow.cpp" line="251"/>
         <source>关于 QuickReplace</source>
         <translation>关于 QuickReplace</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="222"/>
+        <location filename="mainwindow.cpp" line="252"/>
         <source>&lt;h3&gt;QuickReplace - 文件夹替换工具&lt;/h3&gt;&lt;p&gt;版本 1.0&lt;/p&gt;&lt;p&gt;一个简单易用的文件夹内容替换工具。&lt;/p&gt;&lt;p&gt;使用方法：&lt;/p&gt;&lt;ul&gt;&lt;li&gt;选择源文件夹（文件夹 A）&lt;/li&gt;&lt;li&gt;选择目标文件夹（文件夹 B）&lt;/li&gt;&lt;li&gt;选择是否创建备份&lt;/li&gt;&lt;li&gt;点击开始替换&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;注意：&lt;/b&gt;此操作将用文件夹 A 的内容完全替换文件夹 B 的内容，请谨慎操作！&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>

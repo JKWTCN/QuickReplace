@@ -5,17 +5,21 @@
 #include <QDir>
 #include <QFileInfo>
 #include <QStandardPaths>
+#include <QSettings>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , settings(new QSettings("QuickReplace", "Settings", this))
 {
     ui->setupUi(this);
     connectSignals();
+    loadSettings();
 }
 
 MainWindow::~MainWindow()
 {
+    saveSettings();
     delete ui;
 }
 
@@ -27,6 +31,32 @@ void MainWindow::connectSignals()
 
     connect(ui->action_Exit, &QAction::triggered, this, &QWidget::close);
     connect(ui->action_About, &QAction::triggered, this, &MainWindow::showAbout);
+}
+
+void MainWindow::loadSettings()
+{
+    settings->beginGroup("Paths");
+    ui->sourcePathEdit->setText(settings->value("sourcePath", "").toString());
+    ui->targetPathEdit->setText(settings->value("targetPath", "").toString());
+    settings->endGroup();
+
+    settings->beginGroup("Options");
+    ui->createBackupCheck->setChecked(settings->value("createBackup", true).toBool());
+    ui->confirmDeleteCheck->setChecked(settings->value("confirmDelete", true).toBool());
+    settings->endGroup();
+}
+
+void MainWindow::saveSettings()
+{
+    settings->beginGroup("Paths");
+    settings->setValue("sourcePath", ui->sourcePathEdit->text());
+    settings->setValue("targetPath", ui->targetPathEdit->text());
+    settings->endGroup();
+
+    settings->beginGroup("Options");
+    settings->setValue("createBackup", ui->createBackupCheck->isChecked());
+    settings->setValue("confirmDelete", ui->confirmDeleteCheck->isChecked());
+    settings->endGroup();
 }
 
 void MainWindow::browseSourceFolder()
